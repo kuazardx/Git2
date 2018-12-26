@@ -34,8 +34,9 @@ casa:"19"
 
   fecha = new Date();
 
+  video = "embed?pb=!1m18!1m12!1m3!1d425996.59945013665!2d-70.62983129999999!3d-33.47278794999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1545832543751";
 
-
+  activar:boolean = true;
 
 
 }
