@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+import { ErrorComponent } from './components/error/error.component';
 import { PreciosComponent } from './components/precios/precios.component';
 import { ProtegidaComponent } from './components/protegida/protegida.component';
 
@@ -13,8 +14,6 @@ import { APP_ROUTING } from './app.routes';
 //servicios
 import { AuthService } from './services/auth.service';
 import { AuthGuardService } from './services/auth-guard.service';
-import { ErrorComponent } from './components/error/error.component';
-
 
 
 @NgModule({
@@ -30,7 +29,7 @@ import { ErrorComponent } from './components/error/error.component';
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [AuthService, AuthGuardService],
+  providers: [AuthService, AuthGuardService, ErrorComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

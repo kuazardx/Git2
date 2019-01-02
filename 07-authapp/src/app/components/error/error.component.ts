@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 declare var jQuery:any;
 declare var $:any;
 
@@ -7,17 +7,15 @@ declare var $:any;
   templateUrl: './error.component.html',
  // styleUrls: ['./error.component.css']
 })
-export class ErrorComponent implements OnInit {
+export class ErrorComponent {
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
   mensajeError(){
+    console.warn("Este es un mensaje de error.component");
     
   }
-  
 
 
   
