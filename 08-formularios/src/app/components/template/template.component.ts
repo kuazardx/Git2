@@ -4,15 +4,43 @@ import { NgForm } from '@angular/forms'
 @Component({
   selector: 'app-template',
   templateUrl: './template.component.html',
-  styles: []
+  styles: [`
+  .ng-invalid.ng-touched:not(form) {
+    border: 1px solid red;
+  }
+  `]
+
 })
 export class TemplateComponent {
 
   usuario:Object = {
-    nombre: "Marcelo",
-    apellido: "Concha",
-    correo: ""
+    nombre: null,
+    apellido: null,
+    correo: null,
+    sexo: "Hombre",
+    pais: ""
   }
+
+  paises = [{
+    codigo: "CHL",
+    nombre:"Chile"
+  },
+  {
+    codigo: "CRI",
+    nombre:"Costa Rica"
+  },
+  {
+    codigo: "ESP",
+    nombre:"España"
+  },
+  {
+    codigo: "COL",
+    nombre:"Colombia"
+  },
+  {
+    codigo: "FRA",
+    nombre:"Francia"
+  }]
   constructor() { }
 
 guardar(forma:NgForm){
