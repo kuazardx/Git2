@@ -1,0 +1,107 @@
+<!--<h4>Formulario <small>personal</small></h4>
+<hr>
+<form (ngSubmit)="guardar(forma)" #forma="ngForm" novalidate>
+
+    <div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Nombre:</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Nombre" name="nombre" [(ngModel)]="usuario.nombre" minlength="5" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Apellido:</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Apellido" name="apellido" [(ngModel)]="usuario.apellido">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Rut:</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Rut" name="rut" [(ngModel)]="usuario.rut">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Fecha de nacimiento:</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Fecha de nacimiento" name="fechan" [(ngModel)]="usuario.fechan">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Parentezco:</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Parentezco" name="parentezco" [(ngModel)]="usuario.parentezco">
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Correo:</label>
+            <div class="col-md-8">
+
+                <input class="form-control" type="email" placeholder="Correo electrónico" name="correo" [(ngModel)]="usuario.correo" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label">&nbsp;</label>
+            <div class="input-group col-md-8">
+                <button type="submit" class="btn btn-outline-primary">
+            Guardar
+          </button>
+            </div>
+        </div>
+    </div>
+
+</form>-->
+
+<h4>Perfiles <small>personales</small></h4>
+<hr>
+
+<table class="col col-12 table">
+    <thead>
+        <tr class="">
+            <th><button *ngIf="!nombreb" class="btn btn-success rounded-pill" (click)="nombreb = !nombreb">Mostrar Nombre </button><button *ngIf="nombreb" class="btn btn-danger rounded-pill" (click)="nombreb = !nombreb">Ocultar Nombre</button></th>
+            <th><button *ngIf="!apellidob" class="btn btn-success rounded-pill" (click)="apellidob = !apellidob">Mostrar Apellido </button><button *ngIf="apellidob" class="btn btn-danger rounded-pill" (click)="apellidob = !apellidob">Ocultar Apellido</button></th>
+            <th><button *ngIf="!rutb" class="btn btn-success rounded-pill" (click)="rutb = !rutb">Mostrar Rut </button><button *ngIf="rutb" class="btn btn-danger rounded-pill" (click)="rutb = !rutb">Ocultar Rut</button></th>
+            <th><button *ngIf="!fecha_nb" class="btn btn-success rounded-pill" (click)="fecha_nb = !fecha_nb">Mostrar Fecha </button><button *ngIf="fecha_nb" class="btn btn-danger rounded-pill" (click)="fecha_nb = !fecha_nb">Ocultar Fecha</button></th>
+            <th><button *ngIf="!parentezcob" class="btn btn-success rounded-pill" (click)="parentezcob = !parentezcob">Mostrar Parentezco </button><button *ngIf="parentezcob" class="btn btn-danger rounded-pill" (click)="parentezcob = !parentezcob">Ocultar Parentezco</button></th>
+            <th><button *ngIf="!correob" class="btn btn-success rounded-pill" (click)="correob = !correob">Mostrar Correo </button><button *ngIf="correob" class="btn btn-danger rounded-pill" (click)="correob = !correob">Ocultar Correo</button></th>
+        </tr>
+        <tr class="thead-dark">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Rut</th>
+            <th>Fecha de nacimiento</th>
+            <th>Parentezco</th>
+            <th>Correo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of usuarios;">
+            <td *ngIf="nombreb">{{item["nombre"] | capitalizado}}</td>
+            <td *ngIf="!nombreb"></td>
+            <td *ngIf="apellidob">{{item["apellido"] | uppercase}}</td>
+            <td *ngIf="!apellidob"></td>
+            <td *ngIf="rutb">{{item["rut"]}}</td>
+            <td *ngIf="!rutb"></td>
+            <td *ngIf="fecha_nb">{{item["fecha_n"] | date:'dd MMM yyyy'}}</td>
+            <td *ngIf="!fecha_nb"></td>
+            <td *ngIf="parentezcob">{{item["parentezco"] | contrasena : activar }}</td>
+            <td *ngIf="!parentezcob"></td>
+            <td *ngIf="correob">{{item["correo"]}}</td>
+            <td *ngIf="!correob"></td>
+
+    </tbody>
+</table>
+<button *ngIf="!activar" (click)="activar = !activar" type="button" class="btn btn-outline-success btn-block">
+    Activar proteccion de contraseña
+</button>
+<button *ngIf="activar" (click)="activar = !activar" type="button" class="btn btn-outline-danger btn-block">
+    Desactivar proteccion de contraseña
+</button>

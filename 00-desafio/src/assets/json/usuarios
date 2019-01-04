@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Marcelo",
+        "apellido":"Concha",
+        "rut": "16.264.427-0",
+        "fecha_n": "02-09-1985",
+        "parentezco": "",
+        "correo":"marcelo.concha85@gmail.com"
+    },
+    {
+        "nombre": "Andres",
+        "apellido":"Gonzalez",
+        "rut": "16.264.427-1",
+        "fecha_n": "02-09-1985",
+        "parentezco": "",
+        "correo":"andres.gonzalez85@gmail.com"
+    },
+    {
+        "nombre": "M.A",
+        "apellido":"C.G",
+        "rut": "16.264.427-1",
+        "fecha_n": "02-09-1985",
+        "parentezco": "",
+        "correo":"ma.cg85@gmail.com"
+    }
+]
