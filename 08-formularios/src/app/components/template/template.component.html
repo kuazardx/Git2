@@ -60,22 +60,41 @@
     <div class="form-group row">
         <label class="col-2 col-form-label">Sexo</label>
         <div class="col-md-8">
-            <div class="form-check form-check-inline">
-                <input [(ngModel)]="usuario.sexo" class="form-check-input" type="radio" name="sexo" value="Hombre">
-                <label class="form-check-label" for="inlineRadio1">Hombre</label>
+            <div class="form-check form-check-inline" *ngFor="let s of sexos">
+                <input [(ngModel)]="usuario.sexo" class="form-check-input" type="radio" name="sexo" [value]="s">
+                <label class="form-check-label">{{s}}</label>
             </div>
-            <div class="form-check form-check-inline">
+            <!-- <div class="form-check form-check-inline">
                 <input [(ngModel)]="usuario.sexo" class="form-check-input" type="radio" name="sexo" value="Mujer">
-                <label class="form-check-label" for="inlineRadio2">Mujer</label>
+                <label class="form-check-label">Mujer</label>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Aceptar</label>
+        <div class="col-md-8">
+
+            <div class="form-check">
+                <input [(ngModel)]="usuario.acepta" name="acepta" class="form-check-input" type="checkbox" required>
+                <label class="form-check-label" for="defaultCheck1">
+              Acepta terminos y condiciones
+            </label>
             </div>
 
         </div>
     </div>
-    <!-- [disabled]="!forma.valid" -->
+
+
     <div class="form-group row">
         <label class="col-2 col-form-label">&nbsp;</label>
         <div class="input-group col-md-8">
-            <button type="submit" class="btn btn-outline-primary">
+
+            <button type="submit" class="btn btn-outline-primary" [disabled]="!forma.valid">
         Guardar
       </button>
         </div>
@@ -84,3 +103,7 @@
 
 
 </form>
+
+<pre>
+    {{usuario | json}}
+</pre>
