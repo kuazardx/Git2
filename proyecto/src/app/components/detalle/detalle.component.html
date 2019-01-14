@@ -1,0 +1,15 @@
+<div class=" row">
+    <div class="col-md-4">
+        <app-detallelista></app-detallelista>
+    </div>
+
+    <div class="col-md-8" *ngIf="detallecircular && detallebarra" (click)="detallecircular = !detallecircular">
+        <app-detallecircular></app-detallecircular>
+    </div>
+</div>
+<hr>
+<div class="row w-50">
+    <div class="col-12 " *ngIf="detallebarra" (click)="detallebarra = !detallebarra">
+        <app-detallebarra></app-detallebarra>
+    </div>
+</div>
