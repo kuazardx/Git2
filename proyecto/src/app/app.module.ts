@@ -19,6 +19,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 //graficos
 import { ChartsModule } from 'ng2-charts';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ChartsModule } from 'ng2-charts';
     DetalleComponent,
     DetallecircularComponent,
     DetallelistaComponent,
-    DetallebarraComponent
+    DetallebarraComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

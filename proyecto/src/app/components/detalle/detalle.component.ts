@@ -16,6 +16,7 @@ export class DetalleComponent implements OnInit, DoCheck {
   temporal;
   detallebarra:boolean = false;
   detallecircular:boolean = false;
+  cargando:boolean = false;
   constructor(private _detallepruebasDTOService: DetallePruebasDTOService,
     private _graficoCirculoDtoService:GraficoCirculoDtoService) { 
 
@@ -29,21 +30,22 @@ export class DetalleComponent implements OnInit, DoCheck {
  
 ocultarCirculo(){
   this.detallecircular = false;
+  this.cargando = false;
   this.eleccionBarra.id = null;
 }
 
-interaccion(){
-  if(this.eleccionDetalle.num != null){
-    this.detallebarra = true;
-    if(this.eleccionBarra.id !=null){
-      this.detallecircular = true;
-    }else{
-      console.log('esperando eleccion Barra');
-    }
-  }else{
-    console.log('esperando eleccion');
-  }
-}
+// interaccion(){
+//   if(this.eleccionDetalle.num != null){
+//     this.detallebarra = true;
+//     if(this.eleccionBarra.id !=null){
+//       this.detallecircular = true;
+//     }else{
+//       console.log('esperando eleccion Barra');
+//     }
+//   }else{
+//     console.log('esperando eleccion');
+//   }
+// }
 
 
 
@@ -52,6 +54,8 @@ ngDoCheck(){
       this.detallebarra = true;
       if (this.eleccionBarra.id !=null)
         this.detallecircular = true;
+       
+        
   }
 }
 
