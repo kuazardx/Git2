@@ -16,6 +16,7 @@ import { DetallelistaComponent } from './components/detalle-lista/detallelista.c
 //router
 import { APP_ROUTING } from './app.routes';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 //graficos
 import { ChartsModule } from 'ng2-charts';
 

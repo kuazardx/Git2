@@ -1,6 +1,6 @@
-<div (listaSeleccionada)="seleccion($event)">
-    <div style="display: block">
-        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+<div>
+    <div>
+        <canvas baseChart [datasets]="barChartData" [colors]="lineChartColors" [legend]="barChartLegend" [labels]="barChartLabels" [options]="barChartOptions" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
     </div>
-    <!-- <button (click)="randomize()">Update</button> -->
+
 </div>
