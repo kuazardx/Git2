@@ -35,7 +35,7 @@ export class GraficoBarraDtoService {
 
 
   constructor() {
-    console.log("Servicio listo para usar!!!!");
+    console.log("Servicio G.Barra listo para usar!!!!");
 }
 getDetalleGraficos(): Grafico[] {
     return this.graficos;

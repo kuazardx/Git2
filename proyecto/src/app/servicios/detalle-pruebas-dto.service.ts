@@ -32,7 +32,7 @@ export class DetallePruebasDTOService {
     };
 
     constructor() {
-        console.log("Servicio listo para usar!!!!");
+        console.log("Servicio detalle listo para usar!!!!");
     }
     getDetallePruebas(): Prueba[] {
         return this.pruebas;

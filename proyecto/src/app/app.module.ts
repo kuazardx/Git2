@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import  { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { JkpruebasComponent } from './components/jkpruebas/jkpruebas.component';
@@ -20,6 +21,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 //graficos
 import { ChartsModule } from 'ng2-charts';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { PaginadorComponent } from './components/paginador/paginador.component';
 
 @NgModule({
   declarations: [
@@ -33,10 +35,13 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     DetallecircularComponent,
     DetallelistaComponent,
     DetallebarraComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    PaginadorComponent
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     APP_ROUTING,
     FormsModule,
     ChartsModule,

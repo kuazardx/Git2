@@ -46,7 +46,7 @@ export class GraficoCirculoDtoService {
 
 
   constructor() {
-    console.log("Servicio listo para usar!!!!");
+    console.log("Servicio G.Circular listo para usar!!!!");
 }
 getDetalleGraficos(): Grafico[] {
     return this.graficos;

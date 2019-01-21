@@ -1,3 +1,29 @@
-<p>
-  home works!
-</p>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col"># Pruebas</th>
+            <th scope="col">Ultimo Exito</th>
+            <th scope="col">Último Fallo</th>
+            <th scope="col">Última Duración</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let proyecto of proyectos; let i=index" (click)="seleccion(proyecto.nombre)">
+            <th scope="row">{{i+1}}</th>
+            <td> {{proyecto.nombre}} </td>
+            <td> {{proyecto.numpruebas}} </td>
+            <td> {{proyecto.ultimoExito}} </td>
+            <td> {{proyecto.ultimoFallo}} </td>
+            <td> {{proyecto.ultimaDuracion}} </td>
+
+
+
+        </tr>
+    </tbody>
+</table>
+
+{{ dataJson | json}}

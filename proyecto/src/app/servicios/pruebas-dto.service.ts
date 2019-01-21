@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { ClienteDTO } from '../dto/cliente.dto'
+import { HttpClient } from '@angular/common/http';
+
+
 
 @Injectable({
   providedIn: 'root'
@@ -35,9 +39,29 @@ export class PruebasDTOService {
     }
     ];
 
-    constructor() {
-        console.log("Sercicio listo para usar!!!!");
-    }
+  // constructor(public http: HttpClient)  {
+  //       console.log("Sercicio prueba listo para usar!!!!");
+  //   }
+
+
+  //   getClientes(): Observable<any> {
+  //     //return this.http.get<CandidatoDTO[]>('/assets/datos/candidatos.json');
+  //     return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  //   }
+  
+  constructor(private http: HttpClient) {
+    this.getJSON().subscribe(data => {
+        console.log(data)
+    });
+}
+
+public getJSON(): Observable<any> {
+    return this.http.get('../json/data.json')
+}
+
+
+
+
     getProyectos(): Proyecto[] {
         return this.proyectos;
     }
