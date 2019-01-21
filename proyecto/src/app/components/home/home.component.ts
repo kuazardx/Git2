@@ -21,6 +21,10 @@ export class HomeComponent implements OnInit {
     console.log(this.proyectos);
     this.dataJson = this._pruebasDTOService.getJSON();
     console.log('this.dataJson', this.dataJson)
+    this._pruebasDTOService.getJSON().subscribe(data => {
+    console.log(data)
+    this.dataJson = data
+  });
     
   }
   seleccion(id: number) {
@@ -31,6 +35,8 @@ export class HomeComponent implements OnInit {
     this.dataJson = this._pruebasDTOService.getJSON();
     console.log('this.dataJson', this.dataJson)
   }
+
+  
 
 
 

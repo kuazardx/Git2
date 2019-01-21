@@ -56,7 +56,7 @@ export class PruebasDTOService {
 }
 
 public getJSON(): Observable<any> {
-    return this.http.get('../json/data.json')
+    return this.http.get('../json/data.json');
 }
 
 
