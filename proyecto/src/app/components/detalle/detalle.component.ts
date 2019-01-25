@@ -1,8 +1,9 @@
-import { Component, OnInit, DoCheck } from '@angular/core';
-import { GraficoCirculoDtoService } from '../../servicios/grafico-circulo-dto.service'
+import { Component, OnInit, DoCheck, OnDestroy } from '@angular/core';
+import { GraficoCirculoDtoService } from '../../servicios/grafico-circulo-dto.service';
+import { GraficoBarraDtoService } from '../../servicios/grafico-barra-dto.service'
 import { DetallePruebasDTOService } from '../../servicios/detalle-pruebas-dto.service';
 import { RutaDTOService } from '../../servicios/ruta-dto.service';
-import { from } from 'rxjs';
+import { DatosDTOService } from '../../servicios/datos-dto.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { from } from 'rxjs';
   templateUrl: './detalle.component.html',
   styles: []
 })
-export class DetalleComponent implements OnInit, DoCheck {
+export class DetalleComponent implements OnInit, DoCheck, OnDestroy {
 
   eleccionHome;
   eleccionProyecto;
@@ -23,35 +24,22 @@ export class DetalleComponent implements OnInit, DoCheck {
   cargando:boolean =true
   constructor(private _detallepruebasDTOService: DetallePruebasDTOService,
     private _graficoCirculoDtoService:GraficoCirculoDtoService,
-    private _rutaDTOService: RutaDTOService) { 
-
-
-  }
+    private _rutaDTOService: RutaDTOService,
+    public _datosDTOService: DatosDTOService,
+    private _graficoBarraDtoService: GraficoBarraDtoService) {  }
 
 
   ngOnInit() {
+    
     this.eleccionHome =  this._rutaDTOService.getIdHome();
     this.eleccionProyecto = this._rutaDTOService.getIdProyecto();
-    console.log('init')
     this.eleccionDetalle = this._detallepruebasDTOService.getInfo();
     this.eleccionBarra = this._graficoCirculoDtoService.getInfo();
-     setTimeout(()=>{
+    this.detallebarra = this._graficoBarraDtoService.getVisible();
+     setTimeout(()=>{  
+      
+    }, 2)
 
-        
-    }, 2000)
-
-
-
-   //  setTimeout(()=>{
-//   this.dat.datos =  [65, 59, 80, 81, 56];
-//   this.dat.label = ['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-//   this.barChartData=[{datos :[80, 20, 30, 10, 77], label : this.barChartLabels[0]} ]
-//   console.log('barChartData', this.barChartData)
-//   let clone = JSON.parse(JSON.stringify(this.barChartData));
-//   clone[0].data = this.dat.datos;
-//   this.barChartData = clone;
-  
-//  }, 2000)
   }
  
 ocultarCirculo(){
@@ -60,29 +48,17 @@ ocultarCirculo(){
   this.eleccionBarra.id = null;
 }
 
-// interaccion(){
-//   if(this.eleccionDetalle.num != null){
-//     this.detallebarra = true;
-//     if(this.eleccionBarra.id !=null){
-//       this.detallecircular = true;
-//     }else{
-//       console.log('esperando eleccion Barra');
-//     }
-//   }else{
-//     console.log('esperando eleccion');
-//   }
-// }
-
-
-
 ngDoCheck(){
+  
   if (this.eleccionDetalle.num != null){
-      this.detallebarra = true;
+      this.detallebarra = this._graficoBarraDtoService.getVisible();
       if (this.eleccionBarra.id !=null)
-        this.detallecircular = true;
-       
-        
-  }
+      this.detallecircular = this._graficoCirculoDtoService.getVisible();  
+
+}
+}
+ngOnDestroy(){
+  console.log('Se va a eliminar el componente');
 }
 
 }

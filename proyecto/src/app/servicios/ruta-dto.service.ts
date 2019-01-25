@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class RutaDTOService {
 idHome:number = null;
 idProyecto:number=null;
-
+idDetalle:number=null;
   constructor() {
     console.log("Servicio ruta listo para usar!!!!");
 }
@@ -17,11 +17,17 @@ setIdHome(id){
 setIdProyecto(id){
   this.idProyecto = id;
 }
-getIdHome(){
-return this.idHome;
-}
-getIdProyecto(){
-return this.idProyecto;
+setIdDetalle(id){
+  this.idDetalle = id;
 }
 
+getIdHome(){
+  return this.idHome;
+}
+getIdProyecto(){
+  return this.idProyecto;
+}
+getIdDetalle(){
+  return this.idDetalle;
+}
 }

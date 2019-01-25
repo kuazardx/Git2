@@ -7,37 +7,42 @@ import { Injectable } from '@angular/core';
 export class GraficoCirculoDtoService {
 
 
-  private GraficocirculoBool:boolean =false;
+  private graficocirculoBool:boolean =false;
   
-  private graficos: Grafico[]= [
-    {
-        id : 0,
-        datos: [65, 59, 80, 81, 56],
-        label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
+  // private graficos: Grafico[]= [
+  //   {
+  //       id : 0,
+  //       datos: [65, 59, 80, 81, 56],
+  //       label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
      
-    },
-    {
-        id: 1,
-        datos : [20, 45, 93, 81, 100],
-        label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
+  //   },
+  //   {
+  //       id: 1,
+  //       datos : [20, 45, 93, 81, 100],
+  //       label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
      
-    },
-    {
-        id: 2,
-        datos :[80, 20, 30, 10, 77],
-        label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-    },
-    {
-        id: 3,
-        datos :[30, 60, 45, 40, 30],
-        label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-    },
-    {
-        id: 4,
-        datos :[70, 80, 47, 73, 60],
-        label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-    }
-  ]
+  //   },
+  //   {
+  //       id: 2,
+  //       datos :[80, 20, 30, 10, 77],
+  //       label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
+  //   },
+  //   {
+  //       id: 3,
+  //       datos :[30, 60, 45, 40, 30],
+  //       label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
+  //   },
+  //   {
+  //       id: 4,
+  //       datos :[70, 80, 47, 73, 60],
+  //       label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
+  //   }
+  // ]
+  // private itemSelecionado: Grafico = {
+  //   id : null,
+  //   datos: [] ,
+  //   label: [],
+  // };
   private itemSelecionado: Grafico = {
     id : null,
     datos: [] ,
@@ -48,26 +53,58 @@ export class GraficoCirculoDtoService {
   constructor() {
     console.log("Servicio G.Circular listo para usar!!!!");
 }
-getDetalleGraficos(): Grafico[] {
-    return this.graficos;
+// getDetalleGraficos(): Grafico[] {
+//     return this.graficos;
+// }
+// getGraficos(idx: string) {
+//     return this.graficos[idx];
+// }
+// setItem(id){
+//   this.graficos.forEach(grafico => {
+//     if (grafico.id == id){
+//       this.itemSelecionado.id = grafico.id;
+//       this.itemSelecionado.datos = grafico.datos;
+//       this.itemSelecionado.label = grafico.label;
+//       console.log('setC if')
+//     }
+//   })
+//   console.log('setC',this.itemSelecionado)
+// }
+
+setItem(datos){  
+      
+  this.itemSelecionado.id = datos.id;
+  this.itemSelecionado.datos = datos.datos;
+  this.itemSelecionado.label = datos.label;
+  // this.graficocirculoBool = true
+  
+
+console.log('set G.Circulo',this.itemSelecionado)
+console.log('datos enviados G.Circulo',datos)
 }
-getGraficos(idx: string) {
-    return this.graficos[idx];
+
+setItemId(datos){
+  this.itemSelecionado.id = datos;
 }
-setItem(id){
-  this.graficos.forEach(grafico => {
-    if (grafico.id == id){
-      this.itemSelecionado.id = grafico.id;
-      this.itemSelecionado.datos = grafico.datos;
-      this.itemSelecionado.label = grafico.label;
-      console.log('setC if')
-    }
-  })
-  console.log('setC',this.itemSelecionado)
+setItemDatos(datos){
+  this.itemSelecionado.datos = datos;
 }
+setItemLabel(datos){
+  this.itemSelecionado.label = datos;
+
+} 
 getInfo(){
  console.log('getInfo  this.itemSelecionado',this.itemSelecionado)
  return this.itemSelecionado;
+}
+setVisible(){
+  this.graficocirculoBool =true
+}
+setInvisible(){
+  this.graficocirculoBool =false
+}
+getVisible(){
+  return this.graficocirculoBool;
 }
 
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { DatosDTOService } from './datos-dto.service';
 
 
 @Injectable({
@@ -6,63 +7,54 @@ import { Injectable } from '@angular/core';
 })
 export class GraficoBarraDtoService {
 
-  private GraficoBarraBool:boolean =false;
+  public graficoBarraBool:boolean =false;
 
-  private graficos: Grafico[]= [
-    {
-      id : 0,
-      datos: [65, 59, 80, 81, 56],
-      label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-     
-    },
-    {
-      id: 1,
-      datos : [67, 65, 93, 81, 100],
-      label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-     
-    },
-    {
-      id: 2,
-      datos :[80, 67, 53, 62, 77],
-      label:['Prueba 1', 'Prueba 2', 'Prueba 3','Prueba 4', 'Prueba 5']
-    }
-  ]
-  private itemSelecionado: Grafico = {
+
+  private itemSelecionado = {
     id : null,
     datos: [] ,
     label: [],
   };
 
 
-  constructor() {
+  constructor(public _datosDTOService: DatosDTOService ) {
     console.log("Servicio G.Barra listo para usar!!!!");
 }
-getDetalleGraficos(): Grafico[] {
-    return this.graficos;
-}
-getGraficos(idx: string) {
-    return this.graficos[idx];
-}
-setItem(id){
-  this.graficos.forEach(grafico => {
-    if (grafico.id == id){
-      this.itemSelecionado.id = grafico.id;
-      this.itemSelecionado.datos = grafico.datos;
-      this.itemSelecionado.label = grafico.label;
 
-    }
-  })
-  console.log('set',this.itemSelecionado)
+
+setVisible(){
+  this.graficoBarraBool =true
 }
+setInvisible(){
+  this.graficoBarraBool =false
+}
+getVisible(){
+  return this.graficoBarraBool;
+}
+
+setItem(datos){  
+      
+        this.itemSelecionado.id = datos.id;
+        this.itemSelecionado.datos = datos.datos;
+        this.itemSelecionado.label = datos.label;
+        this.graficoBarraBool = true
+}
+setItemDatos(datos){  
+  this.itemSelecionado.datos = datos;
+  this.graficoBarraBool = true
+}
+setItemID(datos){  
+  this.itemSelecionado.id = datos;
+}
+setItemLabel(datos){  
+  this.itemSelecionado.label = datos;
+}
+
+
 getInfo(){
- console.log('getInfo  this.itemSelecionado',this.itemSelecionado)
+
  return this.itemSelecionado;
 }
 
-}
-export interface Grafico {
-  id: number;
-  datos : number[];
-  label: string[];
 }
 

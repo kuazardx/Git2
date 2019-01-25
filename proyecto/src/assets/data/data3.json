@@ -1,0 +1,122 @@
+{
+    "data": [{
+        "idCliente": 1,
+        "nombre": "BCI1",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "1-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }, {
+        "idCliente": 2,
+        "nombre": "BCI2",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "2-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }, {
+        "idCliente": 3,
+        "nombre": "BCI3",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "3-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }, {
+        "idCliente": 4,
+        "nombre": "BCI4",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "4-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }, {
+        "idCliente": 5,
+        "nombre": "BCI5",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "5-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }, {
+        "idCliente": 6,
+        "nombre": "BCI6",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "6-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }, {
+        "idCliente": 7,
+        "nombre": "BCI7",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "7-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": ""
+
+        }]
+    }]
+}

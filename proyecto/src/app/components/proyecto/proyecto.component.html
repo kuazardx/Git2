@@ -13,7 +13,7 @@
     <tbody>
 
 
-        <tr *ngFor="let proyecto of proyectos; let i=index" (click)="seleccion(proyecto.nombre)">
+        <!-- <tr *ngFor="let proyecto of proyectos; let i=index" (click)="seleccion(proyecto.nombre)">
             <th scope="row">{{i+1}}</th>
             <td> {{proyecto.nombre}} </td>
             <td> {{proyecto.numpruebas}} </td>
@@ -21,6 +21,18 @@
             <td> {{proyecto.ultimoFallo}} </td>
             <td> {{proyecto.ultimaDuracion}} </td>
             <td> {{proyecto.ultimoPush}} </td>
+
+
+        </tr> -->
+
+        <tr *ngFor="let proyecto of _datosDTOService.info[eleccionHome].proyectos |pipeKey; let i=index" (click)="seleccion(i)">
+            <td>{{i+1}}</td>
+            <td> {{_datosDTOService.info[eleccionHome].proyectos[i].nombre}} </td>
+            <td> {{_datosDTOService.info[eleccionHome].proyectos[i].numpruebas}} </td>
+            <td> {{_datosDTOService.info[eleccionHome].proyectos[i].ultimoExito}} </td>
+            <td> {{_datosDTOService.info[eleccionHome].proyectos[i].ultimoFallo}} </td>
+            <td> {{_datosDTOService.info[eleccionHome].proyectos[i].ultimaDuracion}} </td>
+            <td> {{_datosDTOService.info[eleccionHome].proyectos[i].ultimoPush}} </td>
 
 
         </tr>
