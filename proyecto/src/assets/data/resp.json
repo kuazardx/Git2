@@ -18,7 +18,8 @@
                 "ultimaDuracion": "",
                 "ultimoPush": "",
                 "pruebas": [{
-                    "id": 0,
+                    "id": 1,
+                    "num": 1,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -48,67 +49,39 @@
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }]
                 }, {
-                    "id": 1,
-                    "ejecucion": "",
-                    "fallo": "",
-                    "datos": [{
-                        "barra": 70,
-                        "labelBarra": "Prueba 1",
-                        "circulo": [70, 80, 47, 73, 60],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 80,
-                        "labelBarra": "Prueba 2",
-                        "circulo": [93, 65, 80, 81, 47],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 47,
-                        "labelBarra": "Prueba 3",
-                        "circulo": [65, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 73,
-                        "labelBarra": "Prueba 4",
-                        "circulo": [67, 47, 93, 65, 100],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 60,
-                        "labelBarra": "Prueba 5",
-                        "circulo": [77, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }]
-                }, {
                     "id": 2,
+                    "num": 2,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
-                        "barra": 70,
+                        "barra": 68,
                         "labelBarra": "Prueba 1",
-                        "circulo": [70, 80, 47, 73, 60],
+                        "circulo": [77, 65, 93, 81, 67],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 80,
+                        "barra": 63,
                         "labelBarra": "Prueba 2",
+                        "circulo": [67, 65, 93, 81, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 72,
+                        "labelBarra": "Prueba 3",
                         "circulo": [93, 65, 80, 81, 47],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 47,
-                        "labelBarra": "Prueba 3",
-                        "circulo": [65, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 73,
+                        "barra": 76,
                         "labelBarra": "Prueba 4",
                         "circulo": [67, 47, 93, 65, 100],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 60,
+                        "barra": 87,
                         "labelBarra": "Prueba 5",
-                        "circulo": [77, 65, 93, 81, 67],
+                        "circulo": [70, 80, 47, 73, 60],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }]
                 }, {
                     "id": 3,
+                    "num": 3,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -139,36 +112,38 @@
                     }]
                 }, {
                     "id": 4,
+                    "num": 4,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
-                        "barra": 70,
+                        "barra": 56,
                         "labelBarra": "Prueba 1",
-                        "circulo": [70, 80, 47, 73, 60],
+                        "circulo": [77, 65, 93, 81, 67],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 80,
+                        "barra": 66,
                         "labelBarra": "Prueba 2",
+                        "circulo": [67, 65, 93, 81, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 74,
+                        "labelBarra": "Prueba 3",
                         "circulo": [93, 65, 80, 81, 47],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 47,
-                        "labelBarra": "Prueba 3",
-                        "circulo": [65, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 73,
+                        "barra": 67,
                         "labelBarra": "Prueba 4",
                         "circulo": [67, 47, 93, 65, 100],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 60,
+                        "barra": 84,
                         "labelBarra": "Prueba 5",
-                        "circulo": [77, 65, 93, 81, 67],
+                        "circulo": [70, 80, 47, 73, 60],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }]
                 }, {
                     "id": 5,
+                    "num": 5,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -199,36 +174,38 @@
                     }]
                 }, {
                     "id": 6,
+                    "num": 6,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
-                        "barra": 70,
+                        "barra": 73,
                         "labelBarra": "Prueba 1",
-                        "circulo": [70, 80, 47, 73, 60],
+                        "circulo": [77, 65, 93, 81, 67],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 80,
+                        "barra": 66,
                         "labelBarra": "Prueba 2",
+                        "circulo": [67, 65, 93, 81, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 75,
+                        "labelBarra": "Prueba 3",
                         "circulo": [93, 65, 80, 81, 47],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 47,
-                        "labelBarra": "Prueba 3",
-                        "circulo": [65, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 73,
+                        "barra": 57,
                         "labelBarra": "Prueba 4",
                         "circulo": [67, 47, 93, 65, 100],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 60,
+                        "barra": 66,
                         "labelBarra": "Prueba 5",
-                        "circulo": [77, 65, 93, 81, 67],
+                        "circulo": [70, 80, 47, 73, 60],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }]
                 }, {
                     "id": 7,
+                    "num": 7,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -259,6 +236,7 @@
                     }]
                 }, {
                     "id": 8,
+                    "num": 8,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -289,36 +267,38 @@
                     }]
                 }, {
                     "id": 9,
+                    "num": 9,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
-                        "barra": 70,
+                        "barra": 73,
                         "labelBarra": "Prueba 1",
-                        "circulo": [70, 80, 47, 73, 60],
+                        "circulo": [77, 65, 93, 81, 67],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 80,
+                        "barra": 66,
                         "labelBarra": "Prueba 2",
+                        "circulo": [67, 65, 93, 81, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 75,
+                        "labelBarra": "Prueba 3",
                         "circulo": [93, 65, 80, 81, 47],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 47,
-                        "labelBarra": "Prueba 3",
-                        "circulo": [65, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 73,
+                        "barra": 57,
                         "labelBarra": "Prueba 4",
                         "circulo": [67, 47, 93, 65, 100],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 60,
+                        "barra": 66,
                         "labelBarra": "Prueba 5",
-                        "circulo": [77, 65, 93, 81, 67],
+                        "circulo": [70, 80, 47, 73, 60],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }]
                 }, {
                     "id": 10,
+                    "num": 10,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -349,6 +329,7 @@
                     }]
                 }, {
                     "id": 11,
+                    "num": 11,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -379,6 +360,7 @@
                     }]
                 }, {
                     "id": 12,
+                    "num": 12,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -409,36 +391,38 @@
                     }]
                 }, {
                     "id": 13,
+                    "num": 13,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
-                        "barra": 70,
+                        "barra": 73,
                         "labelBarra": "Prueba 1",
-                        "circulo": [70, 80, 47, 73, 60],
+                        "circulo": [77, 65, 93, 81, 67],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 80,
+                        "barra": 66,
                         "labelBarra": "Prueba 2",
+                        "circulo": [67, 65, 93, 81, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 75,
+                        "labelBarra": "Prueba 3",
                         "circulo": [93, 65, 80, 81, 47],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 47,
-                        "labelBarra": "Prueba 3",
-                        "circulo": [65, 65, 93, 81, 67],
-                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
-                    }, {
-                        "barra": 73,
+                        "barra": 57,
                         "labelBarra": "Prueba 4",
                         "circulo": [67, 47, 93, 65, 100],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }, {
-                        "barra": 60,
+                        "barra": 66,
                         "labelBarra": "Prueba 5",
-                        "circulo": [77, 65, 93, 81, 67],
+                        "circulo": [70, 80, 47, 73, 60],
                         "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
                     }]
                 }, {
                     "id": 14,
+                    "num": 14,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -469,6 +453,7 @@
                     }]
                 }, {
                     "id": 15,
+                    "num": 15,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -499,6 +484,7 @@
                     }]
                 }, {
                     "id": 16,
+                    "num": 16,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -529,6 +515,7 @@
                     }]
                 }, {
                     "id": 17,
+                    "num": 17,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -559,6 +546,7 @@
                     }]
                 }, {
                     "id": 18,
+                    "num": 18,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -589,6 +577,7 @@
                     }]
                 }, {
                     "id": 19,
+                    "num": 19,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{
@@ -619,6 +608,38 @@
                     }]
                 }, {
                     "id": 20,
+                    "num": 20,
+                    "ejecucion": "",
+                    "fallo": "",
+                    "datos": [{
+                        "barra": 70,
+                        "labelBarra": "Prueba 1",
+                        "circulo": [70, 80, 47, 73, 60],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 80,
+                        "labelBarra": "Prueba 2",
+                        "circulo": [93, 65, 80, 81, 47],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 47,
+                        "labelBarra": "Prueba 3",
+                        "circulo": [65, 65, 93, 81, 67],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 73,
+                        "labelBarra": "Prueba 4",
+                        "circulo": [67, 47, 93, 65, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 60,
+                        "labelBarra": "Prueba 5",
+                        "circulo": [77, 65, 93, 81, 67],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }]
+                }, {
+                    "id": 21,
+                    "num": 21,
                     "ejecucion": "",
                     "fallo": "",
                     "datos": [{

@@ -73,6 +73,7 @@ import { ChartsModule } from 'ng2-charts';
 
 //pipes
 import { PipekeyPipe } from './pipes/pipekey.pipe';
+import { EsperandoComponent } from './components/esperando/esperando.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { PipekeyPipe } from './pipes/pipekey.pipe';
     DetallebarraComponent,
     SpinnerComponent,
     PaginadorComponent,
-    PipekeyPipe
+    PipekeyPipe,
+    EsperandoComponent
   ],
   imports: [
     BrowserModule,

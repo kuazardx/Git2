@@ -1,0 +1,348 @@
+{
+    "data": [{
+        "idCliente": 1,
+        "nombre": "BCI1",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "1-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "barra": 68,
+                    "labelBarra": "Prueba 1",
+                    "circulo": [77, 65, 93, 81, 67],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 63,
+                    "labelBarra": "Prueba 2",
+                    "circulo": [67, 65, 93, 81, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 72,
+                    "labelBarra": "Prueba 3",
+                    "circulo": [93, 65, 80, 81, 47],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 76,
+                    "labelBarra": "Prueba 4",
+                    "circulo": [67, 47, 93, 65, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 87,
+                    "labelBarra": "Prueba 5",
+                    "circulo": [70, 80, 47, 73, 60],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }]
+            }]
+
+        }]
+    }, {
+        "idCliente": 2,
+        "nombre": "BCI2",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "2-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "barra": 56,
+                    "labelBarra": "Prueba 1",
+                    "circulo": [77, 65, 93, 81, 67],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 66,
+                    "labelBarra": "Prueba 2",
+                    "circulo": [67, 65, 93, 81, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 74,
+                    "labelBarra": "Prueba 3",
+                    "circulo": [93, 65, 80, 81, 47],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 67,
+                    "labelBarra": "Prueba 4",
+                    "circulo": [67, 47, 93, 65, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 84,
+                    "labelBarra": "Prueba 5",
+                    "circulo": [70, 80, 47, 73, 60],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }]
+            }]
+
+        }]
+    }, {
+        "idCliente": 3,
+        "nombre": "BCI3",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "3-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "barra": 73,
+                    "labelBarra": "Prueba 1",
+                    "circulo": [77, 65, 93, 81, 67],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 66,
+                    "labelBarra": "Prueba 2",
+                    "circulo": [67, 65, 93, 81, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 75,
+                    "labelBarra": "Prueba 3",
+                    "circulo": [93, 65, 80, 81, 47],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 57,
+                    "labelBarra": "Prueba 4",
+                    "circulo": [67, 47, 93, 65, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 66,
+                    "labelBarra": "Prueba 5",
+                    "circulo": [70, 80, 47, 73, 60],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }]
+            }]
+
+        }]
+    }, {
+        "idCliente": 4,
+        "nombre": "BCI4",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "4-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "barra": 61,
+                    "labelBarra": "Prueba 1",
+                    "circulo": [77, 65, 93, 81, 67],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 77,
+                    "labelBarra": "Prueba 2",
+                    "circulo": [67, 65, 93, 81, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 79,
+                    "labelBarra": "Prueba 3",
+                    "circulo": [93, 65, 80, 81, 47],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 68,
+                    "labelBarra": "Prueba 4",
+                    "circulo": [67, 47, 93, 65, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 74,
+                    "labelBarra": "Prueba 5",
+                    "circulo": [70, 80, 47, 73, 60],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }]
+            }]
+
+        }]
+    }, {
+        "idCliente": 5,
+        "nombre": "BCI5",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "5-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "id": 1,
+                    "ejecucion": "",
+                    "fallo": "",
+                    "datos": [{
+                        "barra": 90,
+                        "labelBarra": "Prueba 1",
+                        "circulo": [70, 80, 47, 73, 60],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 70,
+                        "labelBarra": "Prueba 2",
+                        "circulo": [93, 65, 80, 81, 47],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 57,
+                        "labelBarra": "Prueba 3",
+                        "circulo": [65, 65, 93, 81, 67],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 69,
+                        "labelBarra": "Prueba 4",
+                        "circulo": [67, 47, 93, 65, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 86,
+                        "labelBarra": "Prueba 5",
+                        "circulo": [77, 65, 93, 81, 67],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }]
+                }]
+
+            }]
+        }]
+    }, {
+        "idCliente": 6,
+        "nombre": "BCI6",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "6-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "barra": 65,
+                    "labelBarra": "Prueba 1",
+                    "circulo": [77, 65, 93, 81, 67],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 59,
+                    "labelBarra": "Prueba 2",
+                    "circulo": [67, 65, 93, 81, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 80,
+                    "labelBarra": "Prueba 3",
+                    "circulo": [93, 65, 80, 81, 47],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 81,
+                    "labelBarra": "Prueba 4",
+                    "circulo": [67, 47, 93, 65, 100],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }, {
+                    "barra": 56,
+                    "labelBarra": "Prueba 5",
+                    "circulo": [70, 80, 47, 73, 60],
+                    "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                }]
+            }]
+        }]
+    }, {
+        "idCliente": 7,
+        "nombre": "BCI7",
+        "numpruebas": "",
+        "ultimoExito": "",
+        "ultimoFallo": "",
+        "ultimaDuracion": "",
+        "proyectos": [{
+            "id": 1,
+            "nombre": "7-1",
+            "numpruebas": "",
+            "ultimoExito": "",
+            "ultimoFallo": "",
+            "ultimaDuracion": "",
+            "ultimoPush": "",
+            "pruebas": [{
+                "id": 0,
+                "ejecucion": "",
+                "fallo": "",
+                "datos": [{
+                    "id": 1,
+                    "ejecucion": "",
+                    "fallo": "",
+                    "datos": [{
+                        "barra": 70,
+                        "labelBarra": "Prueba 1",
+                        "circulo": [70, 80, 47, 73, 60],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 80,
+                        "labelBarra": "Prueba 2",
+                        "circulo": [93, 65, 80, 81, 47],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 47,
+                        "labelBarra": "Prueba 3",
+                        "circulo": [65, 65, 93, 81, 67],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 73,
+                        "labelBarra": "Prueba 4",
+                        "circulo": [67, 47, 93, 65, 100],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }, {
+                        "barra": 60,
+                        "labelBarra": "Prueba 5",
+                        "circulo": [77, 65, 93, 81, 67],
+                        "labelCirculo": ["Prueba 1", "Prueba 2", "Prueba 3", "Prueba 4", "Prueba 5"]
+                    }]
+                }]
+
+            }]
+        }]
+    }]
+}

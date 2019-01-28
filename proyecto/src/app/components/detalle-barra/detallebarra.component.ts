@@ -79,7 +79,12 @@ dat  = {
     this.detalleCirculoLabel=[];
     let arr = e.active[0];
   this._graficoCirculoDtoService.setItem(arr._index)
+  this._graficoCirculoDtoService.setInvisible();
+  this._graficoCirculoDtoService.setInvisibleEsp();
+  setTimeout(()=>{  
     this._graficoCirculoDtoService.setVisible();
+  }, 700);
+    
     this.detalleCirculoDatos = this._datosDTOService.info[this.eleccionHome].proyectos[this.eleccionProyecto].pruebas[this.eleccionNumero].datos[arr._index].circulo;
     this.detalleCirculoLabel = this._datosDTOService.info[this.eleccionHome].proyectos[this.eleccionProyecto].pruebas[this.eleccionNumero].datos[arr._index].labelCirculo;
     this._graficoCirculoDtoService.setItemId(arr._index);

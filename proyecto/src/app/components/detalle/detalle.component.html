@@ -7,7 +7,7 @@
     </div>
     <div class="col-9">
         <div class="container">
-            <div class="row" *ngIf="detallecircular">
+            <div class="row " *ngIf="detallecircular">
                 <div class="col-sm">
                     <app-detallecircular></app-detallecircular>
                 </div>
@@ -18,8 +18,11 @@
                     <app-detallecircular></app-detallecircular>
                 </div>
             </div>
-            <div class="col-md-4 offset-md-4" *ngIf="!detallecircular">
+            <div class="col-md-4 offset-md-4" *ngIf="!detallecircular && !cargando && detallebarra">
                 <app-spinner></app-spinner>
+            </div>
+            <div class="col-md-4 offset-md-4" *ngIf="cargando && !detallecircular">
+                <app-esperando></app-esperando>
             </div>
         </div>
         <div class="row mt-5" style="width: 70%;">
@@ -32,3 +35,5 @@
         </div>
     </div>
 </div>
+
+circulo:{{detallecircular}} <br> barra: {{ detallebarra }} <br> carga: {{ cargando }}

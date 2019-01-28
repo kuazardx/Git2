@@ -4,6 +4,7 @@ import { GraficoBarraDtoService } from '../../servicios/grafico-barra-dto.servic
 import { DetallePruebasDTOService } from '../../servicios/detalle-pruebas-dto.service';
 import { RutaDTOService } from '../../servicios/ruta-dto.service';
 import { DatosDTOService } from '../../servicios/datos-dto.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,9 +22,10 @@ export class DetalleComponent implements OnInit, DoCheck, OnDestroy {
   temporal;
   detallebarra:boolean = false;
   detallecircular:boolean = false;
-  cargando:boolean =true
+  cargando:boolean =false
   constructor(private _detallepruebasDTOService: DetallePruebasDTOService,
     private _graficoCirculoDtoService:GraficoCirculoDtoService,
+    private _router: Router,
     private _rutaDTOService: RutaDTOService,
     public _datosDTOService: DatosDTOService,
     private _graficoBarraDtoService: GraficoBarraDtoService) {  }
@@ -36,9 +38,12 @@ export class DetalleComponent implements OnInit, DoCheck, OnDestroy {
     this.eleccionDetalle = this._detallepruebasDTOService.getInfo();
     this.eleccionBarra = this._graficoCirculoDtoService.getInfo();
     this.detallebarra = this._graficoBarraDtoService.getVisible();
-     setTimeout(()=>{  
-      
-    }, 2)
+    console.log('home',this.eleccionHome)
+    setTimeout(()=>{  
+      if(this.eleccionHome == null){
+        this._router.navigate(['/home'] );
+      }
+    }, 1000);
 
   }
  
@@ -54,6 +59,7 @@ ngDoCheck(){
       this.detallebarra = this._graficoBarraDtoService.getVisible();
       if (this.eleccionBarra.id !=null)
       this.detallecircular = this._graficoCirculoDtoService.getVisible();  
+      this.cargando = this._graficoCirculoDtoService.getVisibleEsp();
 
 }
 }

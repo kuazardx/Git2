@@ -23,6 +23,7 @@ interface Proyecto {
 
 interface Prueba {
   id?: number;
+  num?: number;
   ejecucion?: string;
   fallo?: string;
   datos?: Dato[];

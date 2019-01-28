@@ -14,4 +14,7 @@ export class PruebasDTOService {
       console.log('resp', resp);
     });
 }
+getInfoProyectos(){
+  
+}
  }
